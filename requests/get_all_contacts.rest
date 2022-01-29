@@ -1,0 +1,30 @@
+GET http://localhost:3001/api/contacts
+
+###
+
+GET http://localhost:3001/info
+
+###
+
+GET http://localhost:3001/api/contacts/61f49e467a9af52d9e197501
+
+###
+DELETE http://localhost:3001/api/contacts/61f58351e2898cd3dcc253d6
+
+###
+POST http://localhost:3001/api/contacts
+Content-Type: application/json
+
+{
+    "name": "IvanS Komusanac",    
+    "number": "0915608681"
+}
+
+###
+PUT http://localhost:3001/api/contacts/61f1fad5558d642c58ef6f1e
+Content-Type: application/json
+
+{
+    "name": "Ivan Komusanac",    
+    "number": "000"
+}
